@@ -30,12 +30,13 @@ public class StringFormating {
 //        int iWidth = sFiller.length();
 //        int iPadding = iWidth - 34;
 //        int iPadStart = iPadding/2;
-//        
+//      will work ou the middle of the String (remember to alter if you line width or string is odd or even 
+        
         System.out.format("+--------------------------------------------+\n");
-        System.out.format(sAlign1,"Ref:","MC123B","Date:","Static Date");
+        System.out.format(sAlign1,"Ref:","MC123B","Date:","Static Date"); //the Strings can be replaced with variables or methods with a return value
         
         System.out.print(sFiller);
-        System.out.format(sAlignLeft,"Name:","MC","Digital");//aligned Left
+        System.out.format(sAlignLeft,"Name:","MC","Digital");//aligned Left and is formatted inline with line 26
         System.out.format(sAlign1,"Name:","MC","Digital"); //different alignement
         
        
@@ -46,8 +47,5 @@ public class StringFormating {
         System.out.print(sFiller);
         System.out.println("+--------------------------------------------+");       
         System.out.println("\n");
-
-    }   
-
-    
-}
+    }// end of stringFormat
+}//end of class     
